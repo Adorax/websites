@@ -1,0 +1,17 @@
+/* Mon css */
+
+.red {
+  min-height: 100vh; /*vh pour pourcent */
+  background-color: white;
+}
+ .blue {
+   min-height: 70vh;
+   background-color: #F5F5DC;
+ }
+
+ .btn-custom {
+   background-color: skyblue;
+ }
+ .beerRotate {
+   color: black;
+ }
