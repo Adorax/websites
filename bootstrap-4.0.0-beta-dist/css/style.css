@@ -5,8 +5,8 @@
   background-color: white;
 }
  .blue {
-   min-height: 70vh;
-   background-color: #F5F5DC;
+   min-height: 80vh;
+   background-color: #white;
  }
 
  .btn-custom {
@@ -14,4 +14,7 @@
  }
  .beerRotate {
    color: black;
+ }
+ .heartcenter {
+     text-align: center;
  }
