@@ -6,7 +6,7 @@
 }
  .blue {
    min-height: 80vh;
-   background-color: #white;
+   background-color: white;
  }
 
  .btn-custom {
@@ -17,4 +17,9 @@
  }
  .heartcenter {
      text-align: center;
+ }
+ 
+ .imgsize {
+     height: 100px;
+     width: 200px;
  }

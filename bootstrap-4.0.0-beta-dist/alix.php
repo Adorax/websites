@@ -1,5 +1,16 @@
 <?php
+session_start();
+
+$fichier = fopen('files/fichier.txt', 'r+');
+$nbVues = fgets($fichier);
+$nbVues++;
+fseek($fichier, 0);
+fputs($fichier, $nbVues);
+fclose($fichier);
+echo 'Page a été vu :'. $nbVues . ' fois.';
+
 include('include/header.php') ?>
+
 <div class="container-fluid red">
     <div class="container blue ">
         <div class="row">
@@ -16,26 +27,18 @@ include('include/header.php') ?>
 
     </div>
 </div>
+<nav class="navbar fixed-bottom navbar-light bg-light">
+  <a class="navbar-brand" href="#">Fixed bottom</a>
+</nav>
 <?php $nom = strip_tags($_POST['nom']);
 $prenom = strip_tags($_POST['prenom']);
+$name = $_SESSION['name'];
+$pays = isset($_COOKIE['pays']) ? ($_COOKIE['pays']): "";
 ?>
 <script type="text/javascript">
-  alert('<?php echo "Bonjour ".$prenom." ".$nom ; ?>');
+  alert('<?php echo "Bonjour ".$prenom." ".$nom . " And tu etais aussi : " . $name . " de : " . $pays; ?>');
 </script>
-<script type="text/javascript">
-  alert("Ça va ?");
-</script>
-<script type="text/javascript">
-  alert("Moi ça va");
-</script>
-<script type="text/javascript">
-  alert("Bon j'arrête de t'embêter");
-</script>
-<script type="text/javascript">
-  alert("mmh non en faite :D");
-</script>
-<script type="text/javascript">
-  alert("...");
-</script>
+
+
 <?php
 include('include/footer.php')?>
