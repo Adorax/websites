@@ -7,7 +7,7 @@ $nbVues++;
 fseek($fichier, 0);
 fputs($fichier, $nbVues);
 fclose($fichier);
-echo 'Page a été vu :'. $nbVues . ' fois.';
+echo 'La page a été vu :'. $nbVues . ' fois.';
 
 include('include/header.php') ?>
 
@@ -21,12 +21,13 @@ include('include/header.php') ?>
         </div>
         <div class="row">
             <article class="col-md-12 heartcenter"> 
-                <img src="img/img99.jpg" class="img-fluid" alt="Responsive image">
+                <img src="img/img2.jpg" class="img-fluid" alt="Responsive image">
             </article>
         </div>
 
     </div>
 </div>
+<!-- hide  et unhide quand on scroll suffisemment --> 
 <nav class="navbar fixed-bottom navbar-light bg-light">
   <a class="navbar-brand" href="#">Fixed bottom</a>
 </nav>

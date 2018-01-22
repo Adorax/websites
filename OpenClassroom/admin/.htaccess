@@ -1,0 +1,4 @@
+AuthName "Administration aera"
+AuthType Basic
+AuthUserFile "/home/ubuntu/workspace/OpenClassroom/admin/.htpasswd"
+Require valid-user

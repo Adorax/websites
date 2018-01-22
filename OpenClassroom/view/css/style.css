@@ -1,0 +1,56 @@
+/*==============================================================================
+Fiche CSS
+==============================================================================*/
+tr, td {
+    border-width:1px; 
+    border-style:solid; 
+    border-color:#b7b7b7;
+    width: 33%;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+.noPage {
+
+    text-align: center;
+
+
+
+}
+
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #02027c;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+a.page:link, a.page:visited {
+  padding: 2px 10px;
+  border: 0.05px solid grey;
+}
+a:hover, a:active {
+  background-color: #02027c;
+  color: white;
+}
+.right {
+   text-align: right; 
+}
+
+.button {
+    float: left;
+    border: 1px solid green;
+}
+.formLogin {
+
+    display: inline-block;
+}
+.formLabel {
+    margin-left: 150px;
+    display: inline-block;
+}
